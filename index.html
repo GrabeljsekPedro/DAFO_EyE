@@ -1,0 +1,390 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAFO</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://instructure-uploads-eu.s3.eu-west-1.amazonaws.com/account_140560000000000001/attachments/428118/icon_6fd7e25e297677b6ea7fbc9f28afe7ae.ico"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="index.js"></script>
+  </head>
+  <body class="h-full w-full font-sans text-gray-600">
+    <header class="h-[10%] text-center content-center">
+      <h1 class="text-4xl font-bold">DAFO</h1>
+    </header>
+    <main class="h-[%] flex flex-col space-y-4">
+      <div class="w-2/3 mx-auto grid grid-cols-2 gap-4">
+        <div class="px-4 py-2 rounded-md bg-red-100 shadow-lg">
+          <h2 class="italic underline text-lg">Debilidades</h2>
+          <div id="debilidades" class="p-2 mt-2 space-y-2 content-center">
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Dependencia de terceros vendedores</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Preocupaciones por la seguridad de los datos</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Un modelo de negocio fácil de copiar</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Fidelización limitada del cliente</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-2 rounded-md bg-yellow-100 shadow-lg">
+          <h2 class="italic underline text-lg">Amenazas</h2>
+          <div id="amenazas" class="p-2 mt-2 space-y-2 content-center">
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Competencia intensa</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Cuestiones regulatorias</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Amenazas a la ciberseguridad</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Recesiones económicas</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-2 rounded-md bg-green-100 shadow-lg">
+          <h2 class="italic underline text-lg">Fortalezas</h2>
+          <div id="fortalezas" class="p-2 mt-2 space-y-2 content-center">
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Fuerte reconocimiento y reputación de marca</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Diversas ofertas de productos</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Red de distribución bien establecida</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Gran base de clientes</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 py-2 rounded-md bg-blue-100 shadow-lg">
+          <h2 class="italic underline text-lg">Oportunidades</h2>
+          <div id="oportunidades" class="p-2 mt-2 space-y-2 content-center">
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Expansión a mercados emergentes</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Ampliación de tiendas físicas</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Inversión en nuevos emprendimientos</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex justify-between p-1 rounded-md border border-black rounded-md bg-white"
+            >
+              <p class="grow">Entrada planificada a las criptomonedas</p>
+              <button
+                onclick="eliminarC(this)"
+                class="bg-red-500 rounded-full fill-white size-7 p-1"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  height="20"
+                  width="20"
+                >
+                  <path
+                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-2/3 mx-auto p-4 bg-slate-200 rounded-md shadow-lg flex flex-col space-y-2"
+      >
+        <select
+          name=""
+          id="type"
+          class="p-1 rounded-md bg-white border border-grey-950"
+        >
+          <option value="debilidades">Debilidades</option>
+          <option value="amenazas">Amenazas</option>
+          <option value="fortalezas">Fortalezas</option>
+          <option value="oportunidades">Oportunidades</option>
+        </select>
+        <input
+          type="text"
+          name="comment"
+          id="comment"
+          placeholder="Comentario"
+          class="p-1 rounded-md bg-white border border-grey-950"
+        />
+        <button
+          onclick="agregarC()"
+          class="p-2 bg-blue-500 text-slate-100 hover:bg-blue-600 hover:text-slate-200 rounded-md"
+        >
+          Agregar comentario
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
